@@ -462,7 +462,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     padding-top: 30px;
     justify-content: center;
     padding-bottom: 30px;
@@ -510,6 +510,15 @@ body {
     
     
    }
+   .promotionPrice {
+    color: red;
+    text-decoration: line-through;
+    font-weight: 900;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1.2px;
+    
+   }
 
    .product-offer{
     width: 100%;
@@ -546,6 +555,7 @@ body {
     border-style: none;
     cursor: pointer;
     border: #a18c12 1.5px solid;
+    margin: 0px;
    }
    .product-offer button:hover {
     background: rgb(58, 58, 58) ;

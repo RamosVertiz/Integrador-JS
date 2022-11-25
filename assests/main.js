@@ -23,12 +23,13 @@ const saveLocalStorage = (cartList) => {
 // Renderizar productos
 
 const renderProduct = (product) => {
-  const { img, name, price, id } = product;
+  const { img, name, promotionPrice, price, id } = product;
 
     return `
      <div class="product">
             <img src=${img} alt=${name} />
             <h3>${name}</h3>
+            <span class="promotionPrice">${promotionPrice}</span>
             <div class="product-offer">
                 <p>$${price}</p>
                 <button class="btn-add"
@@ -277,7 +278,7 @@ const completeCartAction = (confirmMsg, successMsg) => {
 
 const completeBuy = () => {
   completeCartAction(
-    "¿Desea completar su compra?",
+    "¿Desea completar su compra?" ,
     "La compra se ha realizado correctamente"
   );
 };
