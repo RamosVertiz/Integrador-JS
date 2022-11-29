@@ -54,6 +54,7 @@ body {
 
 .menu-label {
   display: none;
+
 }
 
 
@@ -688,6 +689,50 @@ body {
     header {
       width: 100vw;
     }
+    .navbar {
+      justify-content:start;
+      flex-direction: row-reverse;
+     
+  }
+
+  .cart-icon {
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: none;
+    cursor: none;
+  }
+
+  .navbar-list {
+      position: absolute;
+      top: 65px;
+      left: 5%;
+      right: 5%;
+      width: 90%;
+      flex-direction: column;
+      background-color: rgb(58, 58, 58);
+      border-top: 0px;
+      border-radius: 15px 15px 15px 15px;
+      align-items: flex-start;
+      padding: 30px 30px;
+      gap: 25px;
+      z-index: 2;
+      display: none;
+      border: #FFD900 solid 2px;
+  
+    }
+    .navbar ul li a{
+      font-size: x-large;
+    }
+    .navbar ul li a:hover {
+      text-decoration: none;
+      border-bottom: none;
+      font-weight: 600;
+    }
+
+    .open-menu {
+      display: flex;
+    }  
 
     main {
         margin-top: 50px;
@@ -722,36 +767,7 @@ body {
     
   
 
-    .navbar-list {
-      position: absolute;
-      top: 65px;
-      left: 5%;
-      right: 5%;
-      width: 90%;
-      flex-direction: column;
-      background-color: rgb(58, 58, 58);
-      border-top: 0px;
-      border-radius: 15px 15px 15px 15px;
-      align-items: flex-start;
-      padding: 30px 30px;
-      gap: 25px;
-      z-index: 2;
-      display: none;
-      border: #FFD900 solid 2px;
-  
-    }
-    .navbar ul li a{
-      font-size: x-large;
-    }
-    .navbar ul li a:hover {
-      text-decoration: none;
-      border-bottom: none;
-      font-weight: 600;
-    }
-
-    .open-menu {
-      display: flex;
-    }  
+    
       #fanApp{
         min-height: 300px;
       }
@@ -811,6 +827,10 @@ body {
       font-size: 25px;
   }
 
-  
+  .add-modal {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    width: 100%;
+  }
 
   }
