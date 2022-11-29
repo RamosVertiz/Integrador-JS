@@ -472,7 +472,7 @@ body {
   .product {
     background: rgb(58, 58, 58);
     width: 220px;
-    height: 270px;
+    height: 310px;
     padding: 15px 30px 10px 30px;
     border-radius: 15px;
     display: flex;
@@ -506,17 +506,32 @@ body {
     letter-spacing: 1px;
     border-bottom: solid #FFFFFF 1px;
     padding-bottom: 4px;
-    
-    
-    
    }
+
+   .product-discount{
+    width: 100%;
+    display: flex;
+    align-items:center;  
+    justify-content: space-evenly;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    
+
+   }
+
    .promotionPrice {
     color: red;
     text-decoration: line-through;
-    font-weight: 900;
     font-size: 15px;
-    text-align: left;
-    letter-spacing: 1.2px;
+    font-weight: 300;
+    
+
+   }
+
+   .discount {
+    color: white;
+    font-weight: 300;
+    font-size: 11px;
     
    }
 
@@ -534,7 +549,7 @@ body {
 
     color: #FFFFFF;
     font-weight: 900;
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     letter-spacing: 1.2px;
     
@@ -546,7 +561,7 @@ body {
     background: rgb(255, 217, 0) ;
     color: rgb(58, 58, 58);
     font-weight: 600;
-    width: 75px;
+    width: 80px;
     padding: 5px 0px;
     border-radius: 10px;
     font-size: 11px;
@@ -638,17 +653,26 @@ body {
     border: none;
   }
   
+  .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .add-modal {
+    
     padding: 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-white);
     background-color: green;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 60%;
     transition: all 0.5s ease-out;
     text-align: center;
     transform: translateY(200%);
@@ -786,5 +810,7 @@ body {
       height: 45px;
       font-size: 25px;
   }
+
+  
 
   }

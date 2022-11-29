@@ -23,13 +23,16 @@ const saveLocalStorage = (cartList) => {
 // Renderizar productos
 
 const renderProduct = (product) => {
-  const { img, name, promotionPrice, price, id } = product;
+  const { img, name, promotionPrice, discount, price, id } = product;
 
     return `
      <div class="product">
             <img src=${img} alt=${name} />
             <h3>${name}</h3>
+            <div class= "product-discount">
             <span class="promotionPrice">${promotionPrice}</span>
+            <span class="discount">${discount}</span>
+            </div>
             <div class="product-offer">
                 <p>$${price}</p>
                 <button class="btn-add"
@@ -204,7 +207,7 @@ const showSuccessModal = (msg) => {
   successModal.textContent = msg;
   setTimeout(() => {
     successModal.classList.remove("active-modal");
-  }, 1500);
+  }, 2000);
 };
 
 const addProduct = (e) => {
@@ -215,7 +218,7 @@ const addProduct = (e) => {
 
   if (isExistingCartProduct(product)) {
     addUnitToProduct(product);
-    showSuccessModal("Se agregó una unidad del producto al carrito");
+    showSuccessModal("Se agregó una unidad del producto al carrito 😊");
   } else {
     createCartProduct(product);
     showSuccessModal("El producto se ha agregado al carrito");
