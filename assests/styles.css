@@ -89,7 +89,8 @@ body {
 .cart {
   position: absolute;
   top: 65px;
-  right: 0;
+  right: 20%;
+  left: 20%;
   padding: 50px 30px;
   background-color: rgb(58, 58, 58);
   border: #FFD900 solid 2px;
@@ -734,11 +735,20 @@ body {
       display: flex;
     }  
 
+    
+  .cart {
+    min-width: 100vw;
+    right: 0;
+ left: 0;
+ 
+  }
+
     main {
         margin-top: 50px;
         width: 100%;
         margin-bottom: 30px;
       }
+
     
     .promoContainer p {
       
